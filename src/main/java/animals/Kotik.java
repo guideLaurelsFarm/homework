@@ -5,11 +5,22 @@ public class Kotik {
    private String name, voice;
    private int satiety, weight;
    private static int count;
-   private final int METHODS = 5;
+   private static final int METHODS = 5;
 
     public Kotik() {
         count++;
     }
+
+    public Kotik(String name, String voice, int satiety, int weight) {
+        this.name = name;
+        this.voice = voice;
+        this.satiety = satiety;
+        this.weight = weight;
+
+        count++;
+    }
+
+    public static int getCount() {return count;}
 
     public String getName() {
         return name;
@@ -43,20 +54,9 @@ public class Kotik {
         this.weight = weight;
     }
 
-    public static void setCount(int count) {
-        Kotik.count = count;
+    public void setCount(int count) {
+        this.count = count;
     }
-
-    public Kotik(String name, String voice, int satiety, int weight) {
-        this.name = name;
-        this.voice = voice;
-        this.satiety = satiety;
-        this.weight = weight;
-
-        count++;
-    }
-
-    public int getCount() {return count;}
 
     boolean play() {
         if(satiety > 0) {
