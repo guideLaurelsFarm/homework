@@ -91,23 +91,23 @@ public class Kotik {
 
         for(int i = 0; i < 24; i++) {
             switch (random()) {
-                case (0) -> {
+                case (0):{
                     if (play()) array[i] = "Cat play";
                     eat(1);
                 }
-                case (1) -> {
+                case (1): {
                     if (sleep()) array[i] = "Cat sleep";
                     eat(2, "Meat");
                 }
-                case (2) -> {
+                case (2): {
                     if (wash()) array[i] = "Cat wash";
                     eat();
                 }
-                case (3) -> {
+                case (3): {
                     if (walk()) array[i] = "Cat walk";
                     eat(4, "Fish");
                 }
-                case (4) -> {
+                case (4): {
                     if (hunt()) array[i] = "Cat hunt";
                     eat(5);
                 }
