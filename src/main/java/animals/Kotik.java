@@ -1,13 +1,6 @@
 package animals;
 
-import lombok.*;
-
-import java.util.Scanner;
-
-@Setter
-@Getter
 public class Kotik {
-   Scanner scanner = new Scanner(System.in);
 
    private String name, voice;
    private int satiety, weight;
@@ -17,6 +10,43 @@ public class Kotik {
     public Kotik() {
         count++;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getVoice() {
+        return voice;
+    }
+
+    public int getSatiety() {
+        return satiety;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVoice(String voice) {
+        this.voice = voice;
+    }
+
+    public void setSatiety(int satiety) {
+        this.satiety = satiety;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
+    }
+
+    public static void setCount(int count) {
+        Kotik.count = count;
+    }
+
     public Kotik(String name, String voice, int satiety, int weight) {
         this.name = name;
         this.voice = voice;
