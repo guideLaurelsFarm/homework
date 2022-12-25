@@ -11,11 +11,11 @@ public class Application {
         kotik.setWeight(20);
         kotik.setVoice("Ne meow");
 
-        array = secondKotik.livaAnotherDay();
+        array = secondKotik.liveAnotherDay();
         for(String state: array) {
             System.out.println(state);
         }
-        kotik.livaAnotherDay();
+        kotik.liveAnotherDay();
 
         System.out.println(compareVoice(kotik, secondKotik));
         System.out.println(secondKotik.getCount());

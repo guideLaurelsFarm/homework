@@ -54,10 +54,6 @@ public class Kotik {
         this.weight = weight;
     }
 
-    public void setCount(int count) {
-        this.count = count;
-    }
-
     boolean play() {
         if(satiety > 0) {
             satiety--;
@@ -116,7 +112,7 @@ public class Kotik {
         eat(10, "Fish");
     }
 
-    public String[] livaAnotherDay() {
+    public String[] liveAnotherDay() {
         String[] array = new String[24];
 
         for(int i = 0; i < 24; i++) {
