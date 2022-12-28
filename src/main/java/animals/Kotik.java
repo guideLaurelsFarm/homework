@@ -1,6 +1,6 @@
 package animals;
 
-public class Kotik {
+public class Kotik extends Carnivorous implements Run, Voice{
 
    private String name, voice;
    private int satiety, weight;
@@ -28,10 +28,6 @@ public class Kotik {
 
     public String getVoice() {
         return voice;
-    }
-
-    public int getSatiety() {
-        return satiety;
     }
 
     public int getWeight() {
@@ -143,4 +139,9 @@ public class Kotik {
     }
 
     int random() {return (int) (Math.random() * METHODS);}
+
+    @Override
+    public void run() {
+
+    }
 }
