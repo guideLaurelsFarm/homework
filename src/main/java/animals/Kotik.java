@@ -3,7 +3,7 @@ package animals;
 public class Kotik extends Carnivorous implements Run, Voice{
 
    private String name, voice;
-   private int satiety, weight;
+   private int weight;
    private static int count;
    private static final int METHODS = 5;
 
@@ -14,7 +14,6 @@ public class Kotik extends Carnivorous implements Run, Voice{
     public Kotik(String name, String voice, int satiety, int weight) {
         this.name = name;
         this.voice = voice;
-        this.satiety = satiety;
         this.weight = weight;
 
         count++;
@@ -43,7 +42,7 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     public void setSatiety(int satiety) {
-        this.satiety = satiety;
+        this.setSatiety(satiety);
     }
 
     public void setWeight(int weight) {
@@ -51,7 +50,7 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     boolean play() {
-        if(satiety > 0) {
+        if(getSatiety() > 0) {
             satiety--;
             return true;
         }
@@ -100,7 +99,7 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     void eat(int eat, String food){
-        satiety = eat;
+        setSatiety(eat);
         String fd = food;
     }
 

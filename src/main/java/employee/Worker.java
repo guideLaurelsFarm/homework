@@ -5,7 +5,7 @@ import animals.Voice;
 import food.Food;
 
 public class Worker {
-    public void feed(Food food, Animal animal) {
+    public void feed(Animal animal, Food food) {
         animal.eat(food);
     }
 
