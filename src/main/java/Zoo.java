@@ -16,6 +16,8 @@ public class Zoo {
         worker.feed(lion, meat);
         worker.feed(lion, grass);
 
+        worker.getVoice(lion);
+
         Swim[] swimAnimal;
         swimAnimal = createPond();
         for(Swim animal: swimAnimal) {

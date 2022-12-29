@@ -51,7 +51,7 @@ public class Kotik extends Carnivorous implements Run, Voice{
 
     boolean play() {
         if(getSatiety() > 0) {
-            satiety--;
+            //satiety--;
             return true;
         }
         System.out.println("Need food");
@@ -59,8 +59,8 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     boolean sleep() {
-        if(satiety > 0) {
-            satiety--;
+        if(getSatiety() > 0) {
+            //satiety--;
             return true;
         }
         System.out.println("Need food");
@@ -68,8 +68,8 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     boolean wash() {
-        if(satiety > 0) {
-            satiety--;
+        if(getSatiety() > 0) {
+            //satiety--;
             return true;
         }
         System.out.println("Need food");
@@ -77,8 +77,8 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     boolean walk() {
-        if(satiety > 0) {
-            satiety--;
+        if(getSatiety() > 0) {
+            //satiety--;
             return true;
         }
         System.out.println("Need food");
@@ -86,8 +86,8 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     boolean hunt() {
-        if(satiety > 0) {
-            satiety--;
+        if(getSatiety() > 0) {
+            //satiety--;
             return true;
         }
         System.out.println("Need food");
@@ -95,7 +95,7 @@ public class Kotik extends Carnivorous implements Run, Voice{
     }
 
     void eat(int eat) {
-        satiety = eat;
+        setSatiety(eat);
     }
 
     void eat(int eat, String food){

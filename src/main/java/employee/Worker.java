@@ -9,7 +9,7 @@ public class Worker {
         animal.eat(food);
     }
 
-    public void getVoice(Animal animal) {
-        ((Voice) animal).getVoice();
+    public void getVoice(Voice voice) {
+        voice.getVoice();
     }
 }
